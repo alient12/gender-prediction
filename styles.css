@@ -1,5 +1,5 @@
+/* Global styling for body and html */
 body, html {
-    /* font-family: Arial, sans-serif; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     align-items: center;
     margin: 0;
@@ -7,6 +7,7 @@ body, html {
     height: 100%;
 }
 
+/* Styling for the background image section */
 .background-image {
     background-image: url('assets/background.jpg');
     background-size: cover;
@@ -18,16 +19,17 @@ body, html {
     align-items: center;
 }
 
+/* Overlay styling for the main content */
 .overlay {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 20px;
     border-radius: 10px;
 }
   
+/* Styling for the main container */
 .container {
     display: flex;
     justify-content: space-between;
-    /* width: 600px; */
     padding: 36px;
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid #ccc;
@@ -35,9 +37,13 @@ body, html {
     max-width: 600px;
     margin: 0 auto;
 }
+
+/* Styling for form and prediction containers within main container */
 .form-container, .prediction-container {
     width: 45%;
 }
+
+/* Styling for text input and select elements */
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -47,9 +53,10 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+/* Styling for general button class */
 .btn-class {
     width: 100%;
-    /* background-color: #4CAF50; */
     background-color: #5273a2;
     color: white;
     padding: 14px 20px;
@@ -58,10 +65,13 @@ input[type=text], select {
     border-radius: 4px;
     cursor: pointer;
 }
+
+/* Hover effect for the button */
 .btn-class:hover {
-    /* background-color: #45a049; */
     background-color: #3261a3;
 }
+
+/* Styling for the container displaying saved information */
 .saved-container {
     margin-top: 20px;
     border: 1px dashed #1d1c1c;
@@ -69,20 +79,25 @@ input[type=text], select {
     padding: 10px;
 }
 
+/* Styling for the name input section */
 .name-input {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+/* Styling for the label within name input section */
 .name-input label {
     margin-right: 5px;
 }
 
+/* Styling for prediction paragraph */
 .prediction-p {
     color: rgb(0, 0, 0);
     font-size: 16px;
 }
 
+/* Styling for error messages */
 .error-p {
     color: rgb(255, 255, 255);
     font-size: 16px;
@@ -92,6 +107,7 @@ input[type=text], select {
     border-radius: 10px;
 }
 
+/* Styling for success messages */
 .success-p {
     color: rgb(255, 255, 255);
     font-size: 16px;
