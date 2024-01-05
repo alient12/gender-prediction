@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="text/html" charset="UTF-8" X-Content-Type-Options="nosniff">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" content="text/css">
+        <title>Gender Prediction</title>
+        <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+      </head>
+    <body>
+        <div class="background-image">
+            <div class="overlay">
+                <div class="container">
+                    <div class="form-container">
+                        <h2>Mr. or Ms.?</h2>
+                        <form id="prediction-form">
+                            <div class="name-input">
+                                <label for="fname">Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            </div>
+
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label><br>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label><br>
+
+                            <button type="submit" class="btn-class">Submit</button>
+                            <button type="button" id="save-btn" class="btn-class">Save</button>
+                        </form>
+                    </div>
+                    <div class="prediction-container">
+                        <h2>Prediction</h2>
+                        <div id="prediction-p-container" class="prediction-p">
+                          <p id="prediction-gender"></p>
+                          <p id="prediction-probability"></p>
+                        </div>
+                        <div id = "saved-container" class="saved-container" hidden="true">
+                            <p id="saved-p">Saved Answers</p>
+                            <button id="clear-btn" class="btn-class">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="scripts.js" content="text/js"></script>
+    </body>
+</html>
+
+
